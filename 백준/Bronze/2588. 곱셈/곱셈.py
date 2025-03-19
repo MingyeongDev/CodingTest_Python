@@ -1,7 +1,7 @@
 first = int(input())
-second = int(input())
+second = input()
 
-print(first * (second % 10))
-print(first * ((second // 10) % 10))
-print(first * (second // 100))
-print(first * second)
+print(first * int(second[2]))
+print(first * int(second[1]))
+print(first * int(second[0]))
+print(first * int(second))
