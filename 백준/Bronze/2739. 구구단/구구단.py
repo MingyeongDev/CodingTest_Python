@@ -1,4 +1,4 @@
-dan = int(input())
+num = int(input())
 
 for i in range(1, 10) :
-    print(f'{dan} * {i} = {dan*i}') 
+    print(num, '*', i, '=', num * i)
