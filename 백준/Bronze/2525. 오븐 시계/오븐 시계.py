@@ -1,10 +1,8 @@
-import sys
+hour, minute = map(int, input().split())
+timer = int(input())
 
-hour, minute = [int(i) for i in sys.stdin.readline().split()]
-cook_minute = int(sys.stdin.readline())
-
-def get_cook_time(hour, minute, cook_minute) :
-  minute += cook_minute
+def get_cook_time(hour, minute, timer) :
+  minute += timer
   
   if minute >= 60 :
     hour += minute // 60
@@ -13,4 +11,4 @@ def get_cook_time(hour, minute, cook_minute) :
     hour = hour % 24
   print(hour, minute)
   
-get_cook_time(hour, minute, cook_minute)
+get_cook_time(hour, minute, timer)
